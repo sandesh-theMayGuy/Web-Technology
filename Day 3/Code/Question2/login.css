@@ -1,0 +1,56 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+div.main-container{
+    height:850px;
+    width:50%;
+    margin-left: 10%;
+    border: 2px solid rgb(168, 157, 157);
+    border-radius: 5px;
+}
+
+img{
+    margin-left: 27%;
+    margin-top: 2%;
+    border-radius: 40%;
+}
+
+
+div.loginform{
+    position:relative;
+    top:50px;
+    left:5px;
+    border : 1px solid rgb(202, 189, 189);
+    border-radius: 5px;
+    width:96.5%;
+    padding: 10px;
+    height:720px;
+    margin-top: -30px;
+}
+
+div.cancel{
+    background-color: rgb(216, 47, 112);
+    height:10px;
+    width:100%;
+}
+
+button , input{
+    height:40px;
+}
+
+input[type="checkbox"]{
+    height:15px;
+}
+
+input[type="checkbox"]:checked{
+    color: gray;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+h1{
+    margin-left: 50px;
+    margin-top:10px;
+}

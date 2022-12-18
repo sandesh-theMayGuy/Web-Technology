@@ -1,0 +1,32 @@
+body{
+    background-image: url(../../Images/ncit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div.login{
+    background-color: rgba(172, 250, 152, 0.85);
+    height: 200px;
+    width: 500px;
+    position: absolute;
+    top:300px;
+    left:50px;
+    text-align: center;
+}
+
+div.admission{
+    background-color: rgba(62, 207, 190, 0.85);
+    height: 850px;
+    width: 700px;
+    position:absolute;
+    right:50px;
+    top:100px;
+}
+
+textarea{
+    position:relative;
+    bottom:20px;
+    left:10px;
+  
+}

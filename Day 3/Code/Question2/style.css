@@ -1,0 +1,25 @@
+body{
+    background: url(../../Images/unnamed.png);
+    opacity:0.75;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(110, 243, 255, 0.8);
+}
+
+h1,h3{
+    margin-top: 90px;
+}
+
+a{
+    color: rgb(0, 0, 0);
+    font-weight: 1000;
+}
+
+a:hover{
+    color:red;
+}
+
+h1{
+    color:purple;
+}
