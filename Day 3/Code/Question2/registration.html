@@ -5,8 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    <link rel="stylesheet" href="./registration.css">
+    <style>
+        input{
+            height:20px;
+        }
+        input , textarea{
+            border-radius: 10px;
+        }
+
+        input[type="submit"] , input[type="reset"]{
+            width:80px;
+            height:30px;
+        }
+    </style>
 </head>
-<body>
-    
+<body">
+
+
+    <div style="background-color:rgb(49, 195, 235); width: 80%; height: 700px; border-radius: 20px;">
+        <center>
+            <h1 style="text-decoration: underline;">Registration Form</h1>
+        </center>
+    <fieldset>
+        <legend>Registration Form</legend>
+    <form action="">
+
+        <pre>
+        First Name : <input type="text"> <br>
+        Last Name :  <input type="text"> <br>
+        Age:         <input type="number"> <br>
+        Email Id:    <input type="email"> <br>
+        Description: <textarea name="" id="" cols="30" rows="10"></textarea> <br>
+        Phone :      <input type="number"> <br>
+        Occupation : <input type="text"> <br>
+
+        <input type="radio" name="agree" value="y"> I agree to the terms and conditions <input type="radio" name="agree" value="n"> I Disagree
+        <br>
+        <input type="submit">  <input type="reset">
+        </pre>
+    </form>
+</fieldset>
+</div>
 </body>
 </html>
