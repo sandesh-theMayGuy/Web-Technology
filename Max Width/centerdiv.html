@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            margin: auto;
+            max-width:100px;               /* The difference between width and max-width is that: */
+            background-color: blue;        /* in screen with lower width , the width will adjust and get smaller */
+        }                                  /* when max-width is used but the width will not adjust if width is used */
+
+        .div2{
+            max-width:300px;
+            height:400px;
+            background-color: aqua;
+        }
+
+        .child{
+            margin:auto;
+            max-width:20px;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">This is div 1</div>
+    <div class="div2">
+        <div class="child">This is a child div</div>
+    </div>
+</body>
+</html>

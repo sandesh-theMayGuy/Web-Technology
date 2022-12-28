@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height:150%;
+            background-color: #ffffff;
+        }
+
+        div.nav{
+            background-color: #0d2946;
+            height:40px;
+            padding-top: 5px;
+            margin-top: 20px;
+            position: sticky;
+            top:10px;
+            
+        }
+
+        
+
+        div.nav ul{
+            list-style: none;
+
+            
+        }
+
+        div.nav ul, div.nav ul li{
+            display: inline;
+        }
+
+        ul#right{
+            margin-left:30%;
+        }
+
+        div.nav ul li{
+            margin-left: 2%;
+        }
+
+        div.nav ul li a {
+            text-decoration: none;
+            color: rgb(62 70 96);
+        }
+
+        div.nav ul li a:hover{
+            color:rgb(210, 195, 195);
+        }
+
+        div.nav ul li a{
+            color:white;
+        }
+
+        div.nav div.drop_content{
+            position: absolute;
+            left:0%;
+            background-color: #123667;
+            color: white;
+            width:10rem;
+            display: none;
+
+        }
+
+        div.drop_content ul li{
+            display: block;
+        }
+
+        li.drop_container{
+            position: relative;
+        }
+
+        li.drop_container:hover > .drop_content{
+            display: block;
+        }
+
+
+     
+    </style>
+</head>
+<body>
+    <div class="nav">
+            <ul id="left">
+                <li> <a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li class="drop_container"><a href="">Department</a>
+                     <div class="drop_content">
+                        <ul>
+                            <li> <a href=""> IT Engineering</a></li>
+                            <li><a href="">Software Engineering</a></li>
+                            <li><a href="">Computer Engineering</a></li>
+                            <li><a href="">BCA</a></li>
+                        </ul>
+                     </div> 
+                    </li>
+                <li class="drop_container"><a href="">Courses</a>
+                    <div class="drop_content">
+                        <ul>
+                            <li> <a href=""> IT Engineering</a></li>
+                            <li><a href="">Software Engineering</a></li>
+                            <li><a href="">Computer Engineering</a></li>
+                            <li><a href="">BCA</a></li>
+                        </ul>
+                     </div> 
+                </li>
+            </ul>
+
+            <ul id="right">
+                <li><input type="text"></li>
+                <li> <a href="">Sign In</a> </li>
+                <li> <a href="">Sign Up</a></li>
+            </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  position: relative;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #444;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #333;
+  color: #fff;
+  width: 200px;
+}
+
+nav ul ul li {
+  display: block;
+  width: 100%;
+}
+
+nav li:hover > ul {
+  display: block;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <a href="#">Menu</a>
+            <ul>
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li><a href="#">Option 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      
+</body>
+</html>

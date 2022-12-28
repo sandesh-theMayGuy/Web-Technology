@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* margin:auto with specified width will center element vertically and remaining width will be splitted equally on the left and right */
+        div.container1{
+            background-color: blue;
+            width:500px;
+            margin: auto; 
+        }
+
+        div.container3{
+            background-color: aqua;
+            height:500px;
+            width:100px;
+        }
+
+        div.child{
+            margin:auto;
+            max-width:50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">This is div with width 500px</div>
+    <div class="container2">This is div with max-width 500px</div>
+
+    <div class="container3">
+        <div class="child">
+            Hello I am inside another div
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    div.container1 , div.container2 , div.container3{
+        height:200px;
+        width:50%;
+    }
+
+
+    div.container1{
+        position: absolute;
+        top:10px;
+        background-color: blue;
+        z-index: 3;
+    }
+
+    div.container2{
+        position:absolute;
+        top:30px;
+        background-color: red;
+        z-index: 2;
+    }
+
+    div.container3{
+        position:absolute;
+        top:50px;
+        background-color: brown;
+        z-index:1;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container1"></div>
+    <div class="container2"></div>
+    <div class="container3"></div>
+</body>
+</html>

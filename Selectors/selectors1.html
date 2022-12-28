@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        /* Descendent Selector or Combinator Selector  */
+        /* all h1 inside main tag  */
+        main h1{
+            color:blue;
+        }
+
+        /* Direct Child Selector  */
+        /* p which is direct child of div */
+   
+        div>p{
+            color:red;
+        }
+
+
+        /* Adjacent Selector */
+        /* section tag that comes directly after h1  */
+        h1+section{
+            color : orange;
+        }
+
+        h1~section{
+            background-color: brown;
+        }
+        /* p and h1  */
+        p,h1{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+    <header>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Gallery</a></li>
+
+        </ul>
+
+        <div>
+            <p>Paragraph inside div</p>
+        </div>
+    </header>
+    <main>
+        <h1>Main content of website</h1>
+        <section id="section-1">
+            First Section of my webpage
+        </section>
+
+        <section id="section-2">
+            Second Section of my webpage
+        </section>
+
+
+    </main>
+    
+</body>
+</html>
+
