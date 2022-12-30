@@ -1,0 +1,58 @@
+<!-- 5. Use All pseudo elements on your Html code. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #first_para::first-letter{
+            font-size:50px;
+        }
+
+        #second_para::first-line{
+            color:red;
+        }
+
+        div::before{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        div::after{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        ::selection{
+            color: red;
+        }
+
+        ::marker{
+            color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <p id="first_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, non.</p>
+
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, placeat.
+    </div>
+
+    <p id="second_para">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit possimus assumenda eaque, quam dolor temporibus beatae quisquam, aspernatur illo aut atque a dicta nostrum pariatur itaque exercitationem sequi fuga dolores.
+    </p>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+
+    </ul>
+    
+</body>
+</html>

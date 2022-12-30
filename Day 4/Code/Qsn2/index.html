@@ -1,0 +1,104 @@
+<!-- 2. Write a program to Use different font, styles: In the style
+definition you define how each selector should work (font, color
+etc.). Then in the body of your pages, you refer to these
+selectors to activate the styles. (All selector must be done) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                /* Universal Selector  */
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            /* Element Selector  */
+            h1{
+                color: blue;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-style: italic;
+            }
+
+            /* Class Selector */
+
+            .container{
+                height:fit-content;
+                width: 25%;
+            }
+
+            /* id selector  */
+            #firstli{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            /* Grouping Selectors  */
+
+            h1 , div{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            /* Pseudo class selector  */
+            h1:hover{
+                color:blue;
+            }
+
+            li:last-of-type{
+                color:navy;
+            }
+
+            /* Pseudo element selector  */
+            div::first-letter{
+                text-decoration: wavy;
+            }
+
+            div::before{
+                font-variant: small-caps;
+            }
+
+            /* Combinator Selectors */
+
+            ul li{
+                list-style-type: circle;
+            }
+
+            div~h1{
+                 font-weight: lighter;
+            }
+
+            div+h1{
+                margin:10px;
+            }
+
+            h1>span{
+                color: red;
+            }
+
+            
+
+
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet labore consectetur ab cum quisquam magnam laudantium commodi voluptates aliquam dolorem laboriosam quod iure, incidunt inventore tenetur unde nam expedita alias.
+    </div>
+
+    <ul>
+        <li id="firstli">Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+
+    </ul>
+
+    <h1>This is another <span> heading </span> </h1>
+
+
+</body>
+</html>

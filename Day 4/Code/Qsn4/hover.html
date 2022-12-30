@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!-- 4. Create Hover.html in which include text “I live in Nepal” 6 times.
+Now add CSS pseudo class on them(link, visited, hover, activate).
+Link must be in red color, when I visited them, they must be on
+blue color and when I hover on them
+a) Color changes to yellow
+b) Font size changes to 150%
+c) Background color changes to black
+d) Font family changes to monospace
+e) Text decoration hidden
+f) Text decoration Wavy -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            position:relative;
+            left:40%;
+            margin-top: 10%;
+            font-size: 50px;
+           
+        }
+
+        a:link{
+            color:red;
+        }
+
+        a:visited{
+            color:blue;
+        }
+
+        a#one:hover{
+            color: yellow;
+        }
+
+        a#two:hover{
+            font-size: 150%;
+        }
+        
+        a#three:hover{
+            background-color: black;
+        }
+
+        a#four:hover{
+            font-family: monospace;
+        }   
+
+        a#five:hover{
+            visibility: hidden;
+        }   
+   
+        a#six:hover{
+            text-decoration:wavy;
+        }
+       
+
+    </style>
+</head>
+<body>
+
+    <div>
+    <p>I live in <a id="one" href="https://en.wikipedia.org/wiki/Nepal"> <span>Nepal</span></a></p>
+    <p>I live in <a id="two" href="https://en.wikipedia.org/wiki/Nepal"><span>Nepal</span></a></p>
+    <p>I live in <a id="three" href="https://en.wikipedia.org/wiki/Nepal"><span>Nepal</span></a></p>
+    <p>I live in <a id="four" href="https://en.wikipedia.org/wiki/Nepal"><span>Nepal</span></a></p>
+    <p>I live in <a id="five" href="https://en.wikipedia.org/wiki/Nepal"><span>Nepal</span></a></p>
+    <p>I live in <a id="six" href="https://en.wikipedia.org/wiki/Nepal"><span>Nepal</span></a></p>
+
+    </div>
+
+</body>
+</html>
