@@ -1,0 +1,25 @@
+CSS units
+
+Types:
+        1.Absolute (px, pt , in , cm , m)  -> fixed size
+        2.Relative (% , em , rem , vh ) -> relative to viewport(vh)/font-size(em,rem)/parent(%)
+
+1.Percentage (%)
+
+    It is relative to parent element
+    It is generally used for width but not preferred for height
+
+
+        width:50%;   -> sets the width to 50% of the parent
+
+
+2. em
+
+    It is relative to font size of parent element
+
+
+3. rem  
+
+    It is relative to font size of root element 
+
+

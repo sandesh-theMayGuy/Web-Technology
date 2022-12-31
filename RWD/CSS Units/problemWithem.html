@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+                font-size: 20px; 
+        }
+
+        #outerdiv{
+            font-size: 2em;   /* twice of parent(body) = 40px */
+                }
+
+        #innerdiv{
+            font-size: 2em;       /*twice of parent (outerdiv) = 80px */
+        }
+
+        /* Solution - rem  */
+    </style>
+</head>
+<body>
+    Hello World
+    <div id="outerdiv">
+            Hello World
+        <div id="innerdiv">
+                <ul>
+                    <li>Item I</li>
+                    <li>Item II</li>
+                    <li>Item III</li>
+                    <li>Item IV</li>
+
+                </ul>
+        </div>
+    </div>
+</body>
+</html>
