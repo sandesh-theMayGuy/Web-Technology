@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Adding 10 each time whenever sum is clicked</h1>
+    <span id="value">10</span>
+    <button id="btn" onclick="add()">Sum</button>
+
+    <script>
+        function add(){
+            let button = document.getElementById("btn");
+            let value = document.getElementById("value")
+            value.innerText = Number(value.innerText) + 10;
+        }
+    </script>
+</body>
+</html>

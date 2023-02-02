@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            display: inline-block;
+            margin: 25px;
+        }
+    </style>
+</head>
+<body>
+    <p id="txt">This is a text</p>
+    <button id="btn" onclick="showHide()">Hide</button>
+
+  
+    <pre>
+                   <button id="up" onclick="up()">Move up</button> 
+    <button id="left" onclick="left()">Move Left</button>  <span id="moving_text">I am here</span> <button id="right" onclick="right()">Move Right</button>
+                 <button id="down" onclick="down()">Move down</button>
+    <script>
+       
+
+        function showHide(){
+            let text = document.getElementById("txt");
+            let button = document.getElementById("btn");
+            if(text.style.display=="block"){
+                text.style.display = "none";
+                button.innerText="Show";
+
+            }
+            else{
+                text.style.display = "block";
+                button.innerText="Hide";
+            }
+        }
+
+        let movingText = document.getElementById("moving_text");
+        
+        function up(){
+            movingText.style.position = "relative";
+            movingText.style.bottom = "20px";
+        }
+
+        function down(){
+            movingText.style.position = "relative";
+            movingText.style.top = "20px";
+        }
+
+        function left(){
+            movingText.style.position = "relative";
+            movingText.style.right = "20px";
+        }
+
+        function right(){
+            movingText.style.position = "relative";
+            movingText.style.left = "20px";
+        }
+    </script>
+</body>
+</html>

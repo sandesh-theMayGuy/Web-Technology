@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">This is a text</p>
+    <button id="btn" onclick="changeColor()">Change Color</button>
+
+    <script>
+        let text = document.getElementById("text");
+        let button = document.getElementById("btn");
+        function changeColor(){
+            if(text.style.color=="red"){
+                text.style.color = "black";
+            }
+            else{
+                text.style.color="red";
+            }
+        }
+        
+    </script>
+</body>
+</html>

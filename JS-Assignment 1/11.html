@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>Quantity                   Price                                   Total</pre>
+    <input type="text" id="quantity">
+    <input type="text" id="price">
+    <button onclick="calculateTotal()">Calculate Total</button>
+    <input type="text" id="total">
+
+
+    <script>
+        function calculateTotal(){
+            let quantity = document.getElementById("quantity").value;
+            console.log(quantity);
+            let price = document.getElementById("price").value;
+            let total = document.getElementById("total");
+
+            let totalValue = Number(quantity) * Number(price);
+            total.value = totalValue;
+        }
+        
+    </script>
+</body>
+</html>

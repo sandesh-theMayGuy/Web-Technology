@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p#name_error , p#phone_error, p#email_error{
+            color:red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="destination.html" onsubmit="return validate()">
+        <label for="name">Full Name: </label>
+        <input type="text" id="name"><br> <br>
+        <p id="name_error">Invalid Name...Please Enter your full name</p>
+
+        <label for="Phone">Phone : </label>
+        <input type="number" id="phone"> <br><br>
+        <p id="phone_error">Invalid Phone....Please Enter your valid phone number</p>
+
+        <label for="email">Email : </label>
+        <input type="email" id="email"> <br><br>
+        <p id="email_error">Invalid Email....Please Enter your valid Email Address</p>
+
+
+        <input type="submit" id="submit">
+    
+    </form>
+
+    <script>
+
+        let submitBtn = document.getElementById("submit");
+
+        // submitBtn.addEventListener("click",function validate(){
+        //     if(!validateName){
+
+        //     }
+
+        // });
+
+
+        function validate(){
+
+        let regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+        let regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        let regPhone = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+
+
+        let name = document.getElementById('name').value;
+        let email = document.getElementById("email").value;
+        let phone = document.getElementById("phone").value;
+
+
+        let nameError = document.getElementById("name_error");
+        let emailError = document.getElementById("email_error");
+        let phoneError = document.getElementById("phone_error");
+
+
+        //validating name 
+        if(!regName.test(name)){
+            // alert('Invalid name given.');
+            nameError.style.display = "block";
+            return false;
+        }
+
+   
+
+        //validating email
+
+        if(!regEmail.test(email)){
+            emailError.style.display = "block";
+            return false;
+        }
+       
+
+        //validating phone
+
+        if(!regPhone.test(phone)){
+            phoneError.style.display = "block";
+            return false;
+        }
+        
+        return true;
+        }
+     
+
+    </script>
+</body>
+</html>

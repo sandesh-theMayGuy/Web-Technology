@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+
+  </style>
+</head>
+<body>
+    <h1 id="txt">Hello World</h1>
+    <button onclick="changeFont()">Change Font</button>
+    <button onclick="changeColor()">Change Color</button>
+
+    <script>
+        let text = document.getElementById("txt");
+        function changeFont(){
+        let font_list = [ 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif','Georgia', 'Times New Roman', 'Times','Segoe UI', 'Tahoma', 'Geneva', 'Verdana'];
+        
+        text.style.fontFamily = font_list[Math.floor(Math.random()*12)];
+        }
+
+    
+
+        function changeColor(){
+       
+            text.style.color = "red";
+            
+
+        }
+    </script>
+</body>
+</html>
